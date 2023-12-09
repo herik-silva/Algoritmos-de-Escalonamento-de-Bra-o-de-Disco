@@ -47,6 +47,8 @@ int main() {
     bool isRunning = true, isReading = true;
     int cylinder, startingCylinder, total;
 
+    cout << "Algoritmo FCFS" << endl;
+
     do{
         vector<int> requestList;
         do{
