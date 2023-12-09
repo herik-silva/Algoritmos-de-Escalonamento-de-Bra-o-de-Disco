@@ -9,3 +9,15 @@ O Algoritmo First-Come, First-Served (FCFS), conhecido como "Primeiro a chegar, 
 
 ### Como executar
 Compile o arquivo FCFS_Simulator.cpp e, em seguida, execute o programa. Preencha a fila com as requisições dos cilindros e, em seguida, informe qual cilindro o braço do disco será posicionado. Ao fim da execução, será exibido o percurso e a quantidade de cilindros percorridos.
+
+## Shortest Seek First
+O Algoritmo Shortest Seek First (SSF), traduzido como "A Busca Mais Curta Primeiro", difere do First-Come, First-Served (FCFS) em sua abordagem para o escalonamento de requisições em um disco. Vamos explorar os princípios fundamentais que norteiam o funcionamento do SSF:
+
+- **Busca pela Menor Distância:** O ponto central do SSF é a busca pela menor distância entre o cilindro atual e os cilindros solicitados. Ao contrário do FCFS, que segue a ordem de chegada, o SSF busca otimizar o tempo de busca do braço do disco, priorizando a requisição que está mais próxima do cilindro atual.
+
+- **Priorização da Eficiência:** O SSF visa minimizar o tempo de busca total, percorrendo a menor distância possível entre os cilindros. Isso resulta em um desempenho potencialmente superior quando comparado ao FCFS, especialmente em situações em que as requisições não estão ordenadas por proximidade física.
+
+- **Dinâmica de Execução:** O algoritmo SSF, durante a execução, ajusta dinamicamente a ordem de atendimento das requisições com base na busca pela menor distância, adaptando-se às mudanças na fila de requisições.
+
+### Como executar
+Compile o arquivo SSF_Simulator.cpp e, em seguida, execute o programa. Preencha a fila com as requisições dos cilindros e, em seguida, informe qual cilindro o braço do disco será posicionado. Ao fim da execução, será exibido o percurso e a quantidade de cilindros percorridos.
